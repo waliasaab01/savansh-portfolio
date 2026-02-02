@@ -479,7 +479,27 @@
   max-width: 100%;
   font-size: 28px;
   }
+  /* --- FIX BOOK A CALL BREAKING --- */
+.nav-left a {
+  white-space: nowrap;
+}
 
+/* --- FIX NAME (Savansh Walia) HIDING ON MOBILE --- */
+@media (max-width: 768px) {
+  .logo-center {
+    font-size: 26px !important;
+    white-space: nowrap;
+    display: block;
+    margin: 5px 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+    
   </style>
   <!-- INTERNAL CSS ENDS HERE -->
 
@@ -754,3 +774,4 @@
 
 </body>
 </html>
+
